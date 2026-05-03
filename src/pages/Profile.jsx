@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import {
   FaPen,
   FaSignOutAlt,
+  FaHome,
   FaUserAstronaut,
   FaCode,
   FaLayerGroup,
@@ -182,6 +183,9 @@ export default function Profile() {
             <span>SinFronteras</span>
           </div>
           <div className="nav-actions">
+            <button className="icon-btn" type="button" onClick={() => navigate("/dashboard")}> 
+              <FaLayerGroup />
+            </button>
             <button className="icon-btn" type="button" onClick={enterEditMode}>
               <FaPen />
             </button>

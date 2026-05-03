@@ -286,6 +286,27 @@
   outline-offset: 2px;
 }
 
+.register-page .link-button {
+  border: none;
+  background: transparent;
+  color: var(--primary-main);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.register-page .link-button:hover,
+.register-page .link-button:focus-visible {
+  color: var(--primary-hover);
+  outline: none;
+}
+
+.register-page .button-icon {
+  font-size: 0.95rem;
+}
+
 .register-page .login-link {
   text-align: center;
   margin-top: 24px;

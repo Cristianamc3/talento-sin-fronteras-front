@@ -40,6 +40,7 @@
     "passwordLabel": "Password *",
     "confirmPasswordLabel": "Confirm password *",
     "roleQuestion": "What is your main role? *",
+    "roleVisitor": "Visitor",
     "roleCreator": "Creator",
     "roleMentor": "Mentor",
     "roleCompany": "Company",
@@ -108,6 +109,7 @@
     "collaborationsTitle": "🤝 Open Collaborations",
     "viewProject": "View project",
     "viewAll": "View all",
+    "createProject": "Create project",
     "footer": "Talent Without Borders · Network for creators, makers and mentors · © 2026"
   },
   "profile": {
@@ -134,5 +136,59 @@
     "addSkillPlaceholder": "Add skill (Enter)",
     "skillExists": "This skill already exists",
     "skillLimit": "Maximum 15 skills"
+  },
+  "projectForm": {
+    "title": "Publish new project",
+    "subtitle": "Share your creation, get feedback and find collaborators",
+    "backButton": "Back to feed",
+    "titleLabel": "Project title *",
+    "titlePlaceholder": "Eg: Library of accessible components",
+    "categoryLabel": "Main category *",
+    "selectCategory": "Select",
+    "categories": {
+      "design": "UI/UX Design",
+      "webDev": "Web Development",
+      "illustration": "Illustration",
+      "animation": "Animation / Motion",
+      "music": "Music / Audio",
+      "maker": "Maker / Electronics",
+      "writing": "Creative Writing",
+      "other": "Other"
+    },
+    "dateLabel": "Estimated date (optional)",
+    "datePlaceholder": "Select date range",
+    "skillsLabel": "Tags / skills",
+    "skillsHint": "(press Enter or comma)",
+    "skillsPlaceholder": "Eg: React, Figma, Illustration, UX Research...",
+    "descriptionLabel": "Project description *",
+    "descriptionPlaceholder": "Describe your project: objectives, stack, inspiration, achievements...",
+    "mediaLabel": "Multimedia (images, short videos)",
+    "uploadText": "Drag or click to upload files",
+    "collabQuestion": "Are you looking for collaborators for this project?",
+    "rolesLabel": "Roles needed",
+    "rolesHint": "(eg: Frontend Developer, Illustrator)",
+    "rolesPlaceholder": "Add role...",
+    "collabDescLabel": "Collaboration description",
+    "collabDescPlaceholder": "What profile do you need? Remote or on-site? Expectations...",
+    "submitButton": "Publish project",
+    "loading": "Publishing...",
+    "errors": {
+      "titleRequired": "Title is required",
+      "titleShort": "Minimum 5 characters",
+      "descriptionRequired": "Description is required",
+      "descriptionShort": "Minimum 20 characters",
+      "categoryRequired": "Select a category",
+      "checkFields": "⚠️ Review the highlighted fields",
+      "duplicateSkill": "This tag is already added",
+      "skillsLimit": "Maximum 12 tags",
+      "duplicateRole": "This role is already added",
+      "rolesLimit": "Maximum 8 roles",
+      "mediaLimit": "Maximum 8 media files",
+      "unsupportedFormat": "Unsupported format (images and MP4 only)",
+      "serverError": "Error creating project. Try again later."
+    },
+    "toast": {
+      "success": "✅ Project published successfully! Redirecting..."
+    }
   }
 }

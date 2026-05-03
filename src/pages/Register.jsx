@@ -46,7 +46,7 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [role, setRole] = useState("creator");
+  const [role, setRole] = useState("creador");
   const [skills, setSkills] = useState([]);
   const [skillValue, setSkillValue] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
@@ -371,9 +371,17 @@ export default function Register() {
               <div className="role-selector" id="roleSelector">
                 <button
                   type="button"
-                  className={`role-option ${role === "creator" ? "active" : ""}`}
-                  data-role="creator"
-                  onClick={() => setRole("creator")}
+                  className={`role-option ${role === "visitante" ? "active" : ""}`}
+                  data-role="visitante"
+                  onClick={() => setRole("visitante")}
+                >
+                  <FaUser /> {t("register.roleVisitor")}
+                </button>
+                <button
+                  type="button"
+                  className={`role-option ${role === "creador" ? "active" : ""}`}
+                  data-role="creador"
+                  onClick={() => setRole("creador")}
                 >
                   <FaPalette /> {t("register.roleCreator")}
                 </button>
@@ -387,9 +395,9 @@ export default function Register() {
                 </button>
                 <button
                   type="button"
-                  className={`role-option ${role === "company" ? "active" : ""}`}
-                  data-role="company"
-                  onClick={() => setRole("company")}
+                  className={`role-option ${role === "empresa" ? "active" : ""}`}
+                  data-role="empresa"
+                  onClick={() => setRole("empresa")}
                 >
                   <FaBuilding /> {t("register.roleCompany")}
                 </button>
@@ -482,7 +490,7 @@ export default function Register() {
             <button
               type="button"
               className="link-button"
-              onClick={() => navigate('/login')}
+              onClick={() => navigate('/')}
             >
               {t("register.loginLink")}
             </button>

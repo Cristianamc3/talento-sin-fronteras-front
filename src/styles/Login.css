@@ -140,6 +140,27 @@
   gap: 8px;
 }
 
+.login-page .button-icon {
+  font-size: 0.95rem;
+}
+
+.login-page .link-button {
+  border: none;
+  background: transparent;
+  color: var(--primary-main);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.login-page .link-button:hover,
+.login-page .link-button:focus-visible {
+  color: var(--primary-hover);
+  outline: none;
+}
+
 .login-page .btn-primary:hover {
   background: var(--primary-hover);
 }

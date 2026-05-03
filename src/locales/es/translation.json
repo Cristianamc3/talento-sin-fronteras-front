@@ -40,6 +40,7 @@
     "passwordLabel": "Contraseña *",
     "confirmPasswordLabel": "Confirmar contraseña *",
     "roleQuestion": "¿Cuál es tu rol principal? *",
+    "roleVisitor": "Visitante",
     "roleCreator": "Creador",
     "roleMentor": "Mentor",
     "roleCompany": "Empresa",
@@ -108,6 +109,7 @@
     "collaborationsTitle": "🤝 Colaboraciones abiertas",
     "viewProject": "Ver proyecto",
     "viewAll": "Ver todas",
+    "createProject": "Crear proyecto",
     "footer": "Talento Sin Fronteras · Red para creadores, makers y mentores · © 2026"
   },
   "profile": {
@@ -134,5 +136,59 @@
     "addSkillPlaceholder": "Añadir habilidad (Enter)",
     "skillExists": "Habilidad ya existe",
     "skillLimit": "Máximo 15 habilidades"
+  },
+  "projectForm": {
+    "title": "Publicar nuevo proyecto",
+    "subtitle": "Comparte tu creación, recibe retroalimentación y encuentra colaboradores",
+    "backButton": "Volver al feed",
+    "titleLabel": "Título del proyecto *",
+    "titlePlaceholder": "Ej: Biblioteca de componentes accesibles",
+    "categoryLabel": "Categoría principal *",
+    "selectCategory": "Seleccionar",
+    "categories": {
+      "design": "Diseño UI/UX",
+      "webDev": "Desarrollo Web",
+      "illustration": "Ilustración",
+      "animation": "Animación / Motion",
+      "music": "Música / Audio",
+      "maker": "Maker / Electrónica",
+      "writing": "Escritura creativa",
+      "other": "Otro"
+    },
+    "dateLabel": "Fecha estimada (opcional)",
+    "datePlaceholder": "Selecciona rango de fechas",
+    "skillsLabel": "Etiquetas / habilidades",
+    "skillsHint": "(presiona Enter o coma)",
+    "skillsPlaceholder": "Ej: React, Figma, Ilustración, UX Research...",
+    "descriptionLabel": "Descripción del proyecto *",
+    "descriptionPlaceholder": "Describe tu proyecto: objetivos, stack, inspiración, logros...",
+    "mediaLabel": "Multimedia (imágenes, videos cortos)",
+    "uploadText": "Arrastra o haz clic para subir archivos",
+    "collabQuestion": "¿Buscas colaboradores para este proyecto?",
+    "rolesLabel": "Roles buscados",
+    "rolesHint": "(ej: Desarrollador Frontend, Ilustrador)",
+    "rolesPlaceholder": "Añadir rol...",
+    "collabDescLabel": "Descripción de la colaboración",
+    "collabDescPlaceholder": "¿Qué perfil necesitas? ¿Remoto o presencial? Expectativas...",
+    "submitButton": "Publicar proyecto",
+    "loading": "Publicando...",
+    "errors": {
+      "titleRequired": "El título es obligatorio",
+      "titleShort": "Mínimo 5 caracteres",
+      "descriptionRequired": "La descripción es obligatoria",
+      "descriptionShort": "Mínimo 20 caracteres",
+      "categoryRequired": "Selecciona una categoría",
+      "checkFields": "⚠️ Revisa los campos resaltados",
+      "duplicateSkill": "Esta etiqueta ya está añadida",
+      "skillsLimit": "Máximo 12 etiquetas",
+      "duplicateRole": "Este rol ya está añadido",
+      "rolesLimit": "Máximo 8 roles",
+      "mediaLimit": "Máximo 8 archivos multimedia",
+      "unsupportedFormat": "Formato no soportado (solo imágenes y MP4)",
+      "serverError": "Error al crear el proyecto. Intenta más tarde."
+    },
+    "toast": {
+      "success": "✅ ¡Proyecto publicado exitosamente! Redirigiendo..."
+    }
   }
 }

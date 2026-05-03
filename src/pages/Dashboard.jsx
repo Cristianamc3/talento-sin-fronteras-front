@@ -209,6 +209,23 @@ export default function Dashboard() {
     navigate("/profile");
   };
 
+  /**
+   * Navega al perfil de un creador específico
+   * 
+   * @param {string} userName - Nombre del usuario a visitar
+   */
+  const handleCreatorClick = (userName) => {
+    // En producción, pasarías el ID del creador como parámetro
+    navigate("/profile");
+  };
+
+  /**
+   * Navega a la pantalla de creación de proyectos
+   */
+  const handleCreateProject = () => {
+    navigate("/project-form");
+  };
+
   useEffect(() => {
     const onScroll = () => {
       if (activeTab !== "feed" || loadingMore) return;
@@ -300,7 +317,14 @@ export default function Dashboard() {
                 <div className="card-header">
                   <div className="user-avatar">{project.userInitial}</div>
                   <div className="user-info">
-                    <div className="user-name">{project.userName}</div>
+                    <button
+                      type="button"
+                      className="user-name"
+                      onClick={() => handleCreatorClick(project.userName)}
+                      style={{ border: "none", background: "transparent", cursor: "pointer", color: "var(--text-primary)", fontWeight: 600, padding: 0, textAlign: "left" }}
+                    >
+                      {project.userName}
+                    </button>
                     <div className="meta">
                       <span>{project.timeAgo}</span>
                       <span className="badge-category">{project.category}</span>
@@ -342,6 +366,16 @@ export default function Dashboard() {
                 </div>
               </div>
               <p style={{ color: "var(--text-tertiary)", marginTop: "12px" }}>{t(activePlaceholder?.textKey)}</p>
+              {activeTab === "proyectos" && (
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={handleCreateProject}
+                  style={{ marginTop: "24px", maxWidth: "280px", marginLeft: "auto", marginRight: "auto" }}
+                >
+                  + {t("dashboard.createProject")}
+                </button>
+              )}
             </article>
           )}
           {loadingMore && <div className="load-more-trigger">{t("dashboard.loadingMore")}</div>}
