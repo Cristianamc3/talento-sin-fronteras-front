@@ -1,0 +1,138 @@
+{
+  "common": {
+    "language": "Idioma",
+    "loading": "Cargando...",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "login": {
+    "subtitle": "Accede a tu red de creadores, makers y mentores",
+    "emailLabel": "Correo electrónico o nombre de usuario",
+    "emailPlaceholder": "tucorreo@ejemplo.com",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "••••••••",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "button": "Iniciar sesión",
+    "loading": "Ingresando...",
+    "noAccount": "¿No tienes cuenta?",
+    "registerLink": "Crea tu perfil gratis",
+    "demoNote": "Demo: prueba con demo@talentosinlimites.com / cualquier contraseña (mín. 6 caracteres)",
+    "errors": {
+      "requiredIdentifier": "Ingresa tu correo o nombre de usuario",
+      "invalidEmail": "Formato de correo inválido",
+      "requiredPassword": "La contraseña es obligatoria",
+      "shortPassword": "La contraseña debe tener al menos 6 caracteres",
+      "checkFields": "⚠️ Revisa los campos resaltados"
+    },
+    "toast": {
+      "welcome": "✅ ¡Bienvenido de nuevo, creador! Redirigiendo al feed...",
+      "forgotPassword": "🔐 Enviamos un enlace para restablecer tu contraseña (demo simulada)",
+      "redirectRegister": "📝 Redirigiendo a la página de registro..."
+    }
+  },
+  "register": {
+    "subtitle": "Únete a la red de creadores, makers y mentores",
+    "uploadAvatar": "Subir avatar",
+    "nameLabel": "Nombre completo *",
+    "namePlaceholder": "María González",
+    "emailLabel": "Correo electrónico *",
+    "emailPlaceholder": "hola@talentosinlimites.com",
+    "passwordLabel": "Contraseña *",
+    "confirmPasswordLabel": "Confirmar contraseña *",
+    "roleQuestion": "¿Cuál es tu rol principal? *",
+    "roleCreator": "Creador",
+    "roleMentor": "Mentor",
+    "roleCompany": "Empresa",
+    "skillsLabel": "Habilidades (añade tus principales fortalezas)",
+    "skillsPlaceholder": "Ej: UX, React, Ilustración, 3D...",
+    "termsText": "Acepto los Términos y condiciones y la política de privacidad *",
+    "button": "Crear cuenta gratuita",
+    "loading": "Creando cuenta...",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "loginLink": "Iniciar sesión",
+    "termsTextPrefix": "Acepto los",
+    "termsLink": "Términos y condiciones",
+    "termsTextSuffix": "y la política de privacidad *",
+    "termsNote": "Al registrarte aceptas formar parte de una comunidad de talento sin fronteras.",
+    "errors": {
+      "nameRequired": "El nombre completo es obligatorio",
+      "nameShort": "Mínimo 3 caracteres",
+      "emailRequired": "El correo es obligatorio",
+      "emailInvalid": "Ingresa un correo válido (ej: nombre@dominio.com)",
+      "passwordRequired": "La contraseña es obligatoria",
+      "passwordShort": "Mínimo 6 caracteres",
+      "passwordMatch": "Las contraseñas no coinciden",
+      "roleRequired": "Selecciona un rol",
+      "termsRequired": "Debes aceptar los términos y condiciones",
+      "tagsDuplicate": "Esta habilidad ya está añadida",
+      "tagsLimit": "Máximo 12 habilidades"
+    },
+    "toast": {
+      "success": "✅ ¡Registro exitoso! Redirigiendo al feed...",
+      "invalidAvatar": "❌ Formato no soportado. Usa JPG, PNG o WEBP."
+    }
+  },
+  "dashboard": {
+    "searchPlaceholder": "Buscar proyectos, creadores o habilidades...",
+    "tabs": {
+      "feed": "Feed",
+      "projects": "Proyectos",
+      "collaborations": "Colaboraciones",
+      "mentorship": "Mentoría"
+    },
+    "placeholder": {
+      "projects": {
+        "text": "Próximamente: exploración avanzada de proyectos"
+      },
+      "collaborations": {
+        "text": "Espacio de convocatorias y equipos colaborativos"
+      },
+      "mentorship": {
+        "text": "Mentoría: agenda de sesiones y mentores destacados"
+      }
+    },
+    "notifications": "📬 Nuevo mensaje de un mentor · Reacción a tu proyecto",
+    "likeAdded": "Añadiste like al proyecto",
+    "likeRemoved": "Quitaste el like",
+    "newProjectLoaded": "✨ Nuevo proyecto cargado automáticamente",
+    "likeButton": "Me gusta",
+    "commentSoon": "💬 Abrir sección de comentarios (próximamente)",
+    "commentButton": "Comentar",
+    "collabRequest": "🤝 Solicitud de colaboración enviada al creador",
+    "requestCollaboration": "Solicitar colaboración",
+    "comments": "comentarios",
+    "collaborators": "colaboradores",
+    "loadingMore": "Cargando más proyectos...",
+    "trendingTitle": "🔥 Tendencias semanales",
+    "featuredTitle": "🌟 Proyecto destacado",
+    "collaborationsTitle": "🤝 Colaboraciones abiertas",
+    "viewProject": "Ver proyecto",
+    "viewAll": "Ver todas",
+    "footer": "Talento Sin Fronteras · Red para creadores, makers y mentores · © 2026"
+  },
+  "profile": {
+    "edit": "Editar perfil",
+    "logout": "Cerrar sesión",
+    "projects": "Proyectos",
+    "followers": "Seguidores",
+    "likesReceived": "Likes recibidos",
+    "follow": "Seguir",
+    "following": "Siguiendo",
+    "message": "Mensaje",
+    "skills": "Habilidades",
+    "projectsPublished": "Proyectos publicados",
+    "avatarAlt": "Avatar",
+    "saveChanges": "Guardar cambios",
+    "cancel": "Cancelar",
+    "bioPlaceholder": "Biografía...",
+    "followSuccess": "Ahora sigues a Mariana López",
+    "unfollowSuccess": "Dejaste de seguir a Mariana López",
+    "profileUpdated": "Perfil actualizado correctamente",
+    "messageSoon": "💬 Próximamente: mensajería directa",
+    "namePlaceholder": "Nombre completo",
+    "rolePlaceholder": "Rol o título",
+    "addSkillPlaceholder": "Añadir habilidad (Enter)",
+    "skillExists": "Habilidad ya existe",
+    "skillLimit": "Máximo 15 habilidades"
+  }
+}

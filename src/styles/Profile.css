@@ -1,0 +1,289 @@
+.profile-page {
+  min-height: 100vh;
+  background: #EEF4FF;
+  --bg-page: #EEF4FF;
+  --border-light: #D7E0F1;
+  --primary-main: #4A5AA8;
+  --primary-hover: #3B4B8D;
+  --primary-light: #E4EAFB;
+  --primary-border-focus: #A9B6E4;
+  --text-primary: #1F3150;
+  --text-secondary: #4D6288;
+  --text-tertiary: #7A8AAE;
+  --surface-white: #FFFFFF;
+  --surface-subtle: #F4F7FF;
+  --shadow-md: 0 12px 32px rgba(30, 55, 110, 0.08);
+  --transition: all 0.2s ease;
+}
+
+.profile-page .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header de navegación */
+.profile-page .nav-bar {
+  background: var(--surface-white);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+.profile-page .nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-page .logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-main);
+  text-decoration: none;
+}
+.profile-page .logo span {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+.profile-page .nav-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.profile-page .icon-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.profile-page .icon-btn:hover {
+  color: var(--primary-main);
+}
+
+/* Tarjeta de perfil */
+.profile-page .profile-card {
+  background: var(--surface-white);
+  border-radius: 28px;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.profile-page .profile-cover {
+  height: 140px;
+  background: linear-gradient(135deg, #D8E3FB, #C5D4F8);
+}
+.profile-page .profile-info {
+  padding: 0 28px 28px 28px;
+  position: relative;
+}
+.profile-page .avatar-large {
+  margin-top: -60px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--surface-white);
+  background: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--primary-main);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.profile-page .avatar-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-page .profile-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.profile-page .profile-role {
+  font-size: 0.9rem;
+  color: var(--primary-main);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.profile-page .profile-bio {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+.profile-page .profile-stats {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+.profile-page .stat {
+  text-align: center;
+}
+.profile-page .stat-number {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+.profile-page .stat-label {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+.profile-page .action-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.profile-page .btn-primary {
+  background: var(--primary-main);
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.profile-page .btn-outline {
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--primary-main);
+  padding: 7px 23px;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.profile-page .btn-outline:hover {
+  background: var(--primary-light);
+}
+
+/* Sección de habilidades */
+.profile-page .skills-section {
+  background: var(--surface-white);
+  border-radius: 24px;
+  border: 1px solid var(--border-light);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+.profile-page .section-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-page .tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.profile-page .tag {
+  background: var(--primary-light);
+  color: var(--primary-main);
+  padding: 6px 14px;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Proyectos del usuario */
+.profile-page .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+.profile-page .project-card {
+  background: var(--surface-white);
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.profile-page .project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.profile-page .project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: var(--surface-subtle);
+}
+.profile-page .project-card-content {
+  padding: 16px;
+}
+.profile-page .project-card-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.profile-page .project-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.profile-page .project-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+}
+
+.profile-page .edit-mode input,
+.profile-page .edit-mode textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border-medium);
+  border-radius: 16px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 12px;
+}
+.profile-page .edit-mode .tags-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border: 1px solid var(--border-medium);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.profile-page .toast-message {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-white);
+  border: 1px solid var(--border-medium);
+  border-radius: 48px;
+  padding: 10px 20px;
+  box-shadow: var(--shadow-md);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  z-index: 1000;
+}
+
+@media (max-width: 680px) {
+  .profile-page .profile-info {
+    padding: 0 20px 20px 20px;
+  }
+  .profile-page .avatar-large {
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+  }
+  .profile-page .profile-name {
+    font-size: 1.4rem;
+  }
+}

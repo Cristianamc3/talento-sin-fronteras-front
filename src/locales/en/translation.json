@@ -1,0 +1,138 @@
+{
+  "common": {
+    "language": "Language",
+    "loading": "Loading...",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "login": {
+    "subtitle": "Access your network of creators, makers, and mentors",
+    "emailLabel": "Email or username",
+    "emailPlaceholder": "youremail@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "forgotPassword": "Forgot your password?",
+    "button": "Log in",
+    "loading": "Signing in...",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Create your free profile",
+    "demoNote": "Demo: try demo@talentosinlimites.com / any password (min. 6 characters)",
+    "errors": {
+      "requiredIdentifier": "Enter your email or username",
+      "invalidEmail": "Invalid email format",
+      "requiredPassword": "Password is required",
+      "shortPassword": "Password must be at least 6 characters",
+      "checkFields": "⚠️ Review the highlighted fields"
+    },
+    "toast": {
+      "welcome": "✅ Welcome back, creator! Redirecting to the feed...",
+      "forgotPassword": "🔐 We sent a password reset link (demo simulated)",
+      "redirectRegister": "📝 Redirecting to the registration page..."
+    }
+  },
+  "register": {
+    "subtitle": "Join the network of creators, makers, and mentors",
+    "uploadAvatar": "Upload avatar",
+    "nameLabel": "Full name *",
+    "namePlaceholder": "Maria Gonzalez",
+    "emailLabel": "Email address *",
+    "emailPlaceholder": "hello@talentosinlimites.com",
+    "passwordLabel": "Password *",
+    "confirmPasswordLabel": "Confirm password *",
+    "roleQuestion": "What is your main role? *",
+    "roleCreator": "Creator",
+    "roleMentor": "Mentor",
+    "roleCompany": "Company",
+    "skillsLabel": "Skills (add your core strengths)",
+    "skillsPlaceholder": "Eg: UX, React, Illustration, 3D...",
+    "termsText": "I accept the Terms and Conditions and the privacy policy *",
+    "button": "Create free account",
+    "loading": "Creating account...",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Log in",
+    "termsTextPrefix": "I accept the",
+    "termsLink": "Terms and Conditions",
+    "termsTextSuffix": "and the privacy policy *",
+    "termsNote": "By signing up, you agree to join a borderless talent community.",
+    "errors": {
+      "nameRequired": "Full name is required",
+      "nameShort": "At least 3 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Enter a valid email (e.g. name@domain.com)",
+      "passwordRequired": "Password is required",
+      "passwordShort": "At least 6 characters",
+      "passwordMatch": "Passwords do not match",
+      "roleRequired": "Select a role",
+      "termsRequired": "You must accept the terms and conditions",
+      "tagsDuplicate": "This skill is already added",
+      "tagsLimit": "Maximum 12 skills"
+    },
+    "toast": {
+      "success": "✅ Registration successful! Redirecting to the feed...",
+      "invalidAvatar": "❌ Unsupported format. Use JPG, PNG or WEBP."
+    }
+  },
+  "dashboard": {
+    "searchPlaceholder": "Search projects, creators or skills...",
+    "tabs": {
+      "feed": "Feed",
+      "projects": "Projects",
+      "collaborations": "Collaborations",
+      "mentorship": "Mentorship"
+    },
+    "placeholder": {
+      "projects": {
+        "text": "Coming soon: advanced project exploration"
+      },
+      "collaborations": {
+        "text": "Space for calls and collaborative teams"
+      },
+      "mentorship": {
+        "text": "Mentorship: session schedules and featured mentors"
+      }
+    },
+    "notifications": "📬 New mentor message · Reaction to your project",
+    "likeAdded": "You liked the project",
+    "likeRemoved": "You removed the like",
+    "newProjectLoaded": "✨ New project loaded automatically",
+    "likeButton": "Like",
+    "commentSoon": "💬 Open comments section (coming soon)",
+    "commentButton": "Comment",
+    "collabRequest": "🤝 Collaboration request sent to the creator",
+    "requestCollaboration": "Request collaboration",
+    "comments": "comments",
+    "collaborators": "collaborators",
+    "loadingMore": "Loading more projects...",
+    "trendingTitle": "🔥 Weekly Trends",
+    "featuredTitle": "🌟 Featured Project",
+    "collaborationsTitle": "🤝 Open Collaborations",
+    "viewProject": "View project",
+    "viewAll": "View all",
+    "footer": "Talent Without Borders · Network for creators, makers and mentors · © 2026"
+  },
+  "profile": {
+    "edit": "Edit profile",
+    "logout": "Log out",
+    "projects": "Projects",
+    "followers": "Followers",
+    "likesReceived": "Likes received",
+    "follow": "Follow",
+    "following": "Following",
+    "message": "Message",
+    "skills": "Skills",
+    "projectsPublished": "Published projects",
+    "avatarAlt": "Avatar",
+    "saveChanges": "Save changes",
+    "cancel": "Cancel",
+    "bioPlaceholder": "Bio...",
+    "followSuccess": "You are now following Mariana López",
+    "unfollowSuccess": "You stopped following Mariana López",
+    "profileUpdated": "Profile updated successfully",
+    "messageSoon": "💬 Coming soon: direct messaging",
+    "namePlaceholder": "Full name",
+    "rolePlaceholder": "Role or title",
+    "addSkillPlaceholder": "Add skill (Enter)",
+    "skillExists": "This skill already exists",
+    "skillLimit": "Maximum 15 skills"
+  }
+}
