@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import {
   FaPen,
   FaSignOutAlt,
-  FaHome,
   FaUserAstronaut,
   FaCode,
   FaLayerGroup,

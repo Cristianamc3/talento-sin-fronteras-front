@@ -63,51 +63,6 @@ export default function Login() {
   };
 
   /**
-   * Valida los datos del formulario de login
-   * 
-   * Verifica que:
-   * - Email/usuario no esté vacío
-   * - Si contiene @, sea un email válido (regex RFC 5322 simplificado)
-   * - Contraseña tenga al menos 6 caracteres
-   * 
-   * @returns {boolean} true si todos los campos son válidos
-   * 
-   * @example
-   * if (!validateLogin()) {
-   *   showToast("Revisa los campos", true);
-   *   return;
-   * }
-   */
-  const validateLogin = () => {
-    let isValid = true;
-    const identifier = email.trim();
-    const passwordValue = password.trim();
-    const newErrors = { identifier: "", password: "" };
-
-    if (identifier === "") {
-      newErrors.identifier = t("login.errors.requiredIdentifier");
-      isValid = false;
-    } else if (identifier.includes("@")) {
-      const emailRegex = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
-      if (!emailRegex.test(identifier)) {
-        newErrors.identifier = t("login.errors.invalidEmail");
-        isValid = false;
-      }
-    }
-
-    if (passwordValue === "") {
-      newErrors.password = t("login.errors.requiredPassword");
-      isValid = false;
-    } else if (passwordValue.length < 6) {
-      newErrors.password = t("login.errors.shortPassword");
-      isValid = false;
-    }
-
-    setErrors(newErrors);
-    return isValid;
-  };
-
-  /**
    * Maneja el envío del formulario de login
    * 
    * Valida los datos, muestra errores si es necesario,
