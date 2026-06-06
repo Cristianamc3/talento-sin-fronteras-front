@@ -1,0 +1,25 @@
+name: Code Quality Validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Code Quality Checks
+        run: npx eslint src --ext .js,.jsx,.ts,.tsx --max-warnings 0
